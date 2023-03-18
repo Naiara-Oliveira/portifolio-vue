@@ -15,28 +15,28 @@
       <hr/>
   
       <div class="pa-2" >
-        <router-link to="/" class="btn d-block mb-2">Home</router-link>
+        <router-link to="/sobre" class="btn d-block mb-2">Sobre</router-link>
         <router-link to="/projetos" class="btn d-block mb-2">Projetos</router-link>
         <router-link to="/contato" class="btn d-block mb-2">Contato</router-link>
       </div>
   
     </v-navigation-drawer>
-    <v-container fluid class="container-imagem-texto">
+   <v-container fluid class="container-imagem-texto">
   <v-row>
     <v-col cols="12" md="5" class="d-flex align-center justify-center">
-      <div>
-        <h1 class="text-h5 mb-4">Olá mundo!</h1>
-        <h2 class="text-h6 mb-6">Developer front-end</h2>
-        <v-btn color="primary" depressed>Conheça mais</v-btn>
+      <div class="text-center">
+        <h1 class="text-h5 mb-4">"Desenvolvimento front-end é a arte de dar vida a uma ideia, transformando códigos em experiências únicas e memoráveis."</h1>
+       <br>
+       <h2 mt-5>Desenvolvedora Frontend</h2>
       </div>
     </v-col>
     <v-col cols="12" md="7" class="col-padding">
       <v-img class="img-container fill-width" src="@/assets/istockphoto-510160569-612x612.jpg" cover="true"></v-img>
     </v-col>
   </v-row>
-</v-container>
+</v-container> 
 
-<section class="about">
+<section class="sobre">
     <v-container>
       <v-row>
         <v-col cols="12" md="6">
@@ -48,13 +48,14 @@
             <p>Olá, meu nome é Naiara e sou estudante de Sistemas de Informação do Campus Coxim da UFMS, atualmente cursando o 7º semestre. Eu tenho uma paixão especial pela área de desenvolvimento frontend e já desenvolvi projetos acadêmicos e pessoais que me permitiram aprimorar minhas habilidades em HTML, CSS e JavaScript, assim como o framework Vue.js. Estou ansiosa para poder aplicar meu conhecimento e entusiasmo em um ambiente de trabalho profissional.</p>
             <p>Sou uma pessoa organizada e focada, que sempre traça objetivos claros e trabalha com metas estabelecidas. Além disso, acredito que um bom trabalho é feito em equipe e estou sempre disposta a ajudar e colaborar. Minha motivação é construir soluções efetivas para o mercado.</p>
             <p>Meu objetivo profissional é adquirir a experiência que o mercado exige e me transformar em uma das melhores desenvolvedoras do mercado.</p>
+            <v-btn class="mx-auto d-block text-center" style="width: 285px" color="#FF4858" mt="3"  depressed href="https://drive.google.com/file/d/13qFjHZXjE1CqSpl0Ke3zr6lw-ZN-gT7z/view?usp=sharing"  download> Download do Currículo</v-btn>
           </div>
         </v-col>
       </v-row>
     </v-container>
   </section>
 
-  <section>
+  <section class=projetos>
     <v-container>
         <h1 class="text-h6 mb-4">Projetos</h1>
     <v-row class="cards">
@@ -80,21 +81,24 @@
         <v-col align="center" ml-5 mb-2 cols="12" md="8">
               Desenvolvido por Naiara Oliveira
         </v-col>
-
-        <v-col cols="12" md="4" mb-2>
-    <v-btn icon href="https://github.com/seugithub">
+<v-col cols="12" md="4" mb-2 class="contato">
+    <v-btn icon href="https://github.com/Naiara-Oliveira">
       <v-icon size="48">mdi-github</v-icon>
     </v-btn>
-    <v-btn icon href="https://www.linkedin.com/in/seulinkedin">
+    <v-btn icon href="https://www.linkedin.com/in/naiara-oliveira-frontend/">
       <v-icon size="48">mdi-linkedin</v-icon>
     </v-btn>
-    <v-btn icon href="mailto:seuemail@exemplo.com">
+    <v-btn icon href="nayaraoliveira.9722@gmail.com">
       <v-icon size="48">mdi-email</v-icon>
     </v-btn>
-  
-        </v-col>
-       
-      </v-row>
+    <v-btn icon href="tel:+5567981947787">
+    <v-icon size="48">mdi-phone</v-icon>
+  </v-btn>
+  <v-btn icon href="https://wa.me/5567981947787">
+  <v-icon size="48">mdi-whatsapp</v-icon>
+  </v-btn>
+   </v-col>
+     </v-row>
     </v-container>
   </v-footer>
 
@@ -155,7 +159,7 @@
   <style scoped>
   
   .slogan {
-    text-transform: uppercase;
+    text-transform: uppercase; 
     color:#FF4858;
   }
   
@@ -252,7 +256,7 @@
   background-size: cover;
   height: 200px;
 }
-.about {
+.sobre {
   padding: 50px 0;
 }
 .text {
